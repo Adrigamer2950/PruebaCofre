@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.adrigamer2950.pruebacofre.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinChestBlock",
+    "MixinChestBlockEntity"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "defaultTables": [
+    "minecraft:chests/spawn_bonus_chest"
+  ],
+
+  "biomes": [
+    {
+      "biome": "minecraft:plains",
+      "lootTables": [
+        "pruebacofre:chests/diamond_chest",
+        "pruebacofre:chests/golden_chest"
+      ]
+    }
+  ]
+}

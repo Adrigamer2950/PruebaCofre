@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "pruebacofre",
+  "version": "${version}",
+
+  "name": "PruebaCofre",
+  "description": "La prueba del Cofre",
+  "authors": [
+    "Adrigamer2950"
+  ],
+  "contact": {},
+
+  "license": "All-Rights-Reserved",
+
+  "environment": "server",
+  "entrypoints": {
+    "main": ["me.adrigamer2950.pruebacofre.PCMain"]
+  },
+
+  "mixins": [
+    "pruebacofre.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
