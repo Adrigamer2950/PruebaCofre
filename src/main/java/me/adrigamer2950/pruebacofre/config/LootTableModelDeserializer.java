@@ -13,7 +13,7 @@ import java.util.List;
 public class LootTableModelDeserializer {
 
     @SneakyThrows
-    public static LootableChestProcessor fromJson(String json) {
+    public static void fromJson(String json) {
         BiomeLootTablesModel model = new Gson().fromJson(json, BiomeLootTablesModel.class);
 
         HashMap<String, List<Identifier>> lootTables = new HashMap<>();
@@ -40,7 +40,5 @@ public class LootTableModelDeserializer {
                         defaultTables
                 )
         );
-
-        return null;
     }
 }

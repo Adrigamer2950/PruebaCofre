@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
+@SuppressWarnings("unused")
 @Getter
 @RequiredArgsConstructor
 public class BiomeModel {

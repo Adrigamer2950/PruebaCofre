@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.nio.charset.StandardCharsets;
+import java.util.Objects;
 
 @Getter
 public class ModConfig {
@@ -20,6 +21,7 @@ public class ModConfig {
 
     private final File file;
 
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     @SneakyThrows
     public ModConfig() {
         File configFolder = new File("./config", PCMain.MOD_ID);
@@ -34,7 +36,9 @@ public class ModConfig {
 
         FileOutputStream output = new FileOutputStream(PATH);
         output.write(
-                PCMain.class.getClassLoader().getResourceAsStream("data/pruebacofre/loot_table_per_biome/per_biome_chest.json").readAllBytes()
+                Objects.requireNonNull(
+                        PCMain.class.getClassLoader().getResourceAsStream("data/pruebacofre/loot_table_per_biome/per_biome_chest.json")
+                ).readAllBytes()
         );
         output.close();
     }
